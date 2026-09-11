@@ -1188,7 +1188,7 @@ export default function ChatPage({ user, onLogoutComplete }) {
 
   useEffect(() => {
     // const socketClient = io(appConfig.socketUrl, { auth: { token } });
-const socket = io(appConfig.socketUrl, {
+const socketClient = io(appConfig.socketUrl, {
   ...appConfig.socketOptions,
   auth: { token }
 });
